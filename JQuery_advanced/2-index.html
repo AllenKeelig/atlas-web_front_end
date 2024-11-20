@@ -10,20 +10,6 @@
 
     <body>
         <script type="application/javascript">
-        function createFamilyTree() {
-            const table = $('<table></table>');
-            const thead = $('<thead></thead>');
-            const headerRow = $('<tr></tr>');
-            headerRow.append($('<th>Firstname</th>')).append($('<th>Lastname</th>'));
-            thead.append(headerRow);
-            const tbody = $('<tbody></tbody>');
-            tbody.append($('<tr></tr>').append($('<td>Guillaume</td>')).append($('<td>Salva</td>')));
-            tbody.append($('<tr></tr>').append($('<td>Paulette</td>')).append($('<td>Salva</td>')));
-            tbody.append($('<tr></tr>').append($('<td>Antoine</td>')).append($('<td>Salva</td>')));
-            table.append(thead).append(tbody);
-            $('body').append(tableHtml);
-        }
-        createFamilyTree();
         </script>
     </body>
 
