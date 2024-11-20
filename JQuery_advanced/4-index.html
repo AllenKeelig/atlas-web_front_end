@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" type="application/javascript"></script>
+    </head>
+
+    <body>
+        <script type="application/javascript">
+        function createFamilyTree() {
+            const table = $('<table></table>');
+            const thead = $('<thead></thead>');
+            const headerRow = $('<tr></tr>');
+            headerRow.append($('<th>Firstname</th>')).append($('<th>Lastname</th>'));
+            thead.append(headerRow);
+            const tbody = $('<tbody></tbody>');
+            tbody.append($('<tr></tr>').append($('<td>Guillaume</td>')).append($('<td>Salva</td>')));
+            tbody.append($('<tr></tr>').append($('<td>Paulette</td>')).append($('<td>Salva</td>')));
+            tbody.append($('<tr></tr>').append($('<td>Antoine</td>')).append($('<td>Salva</td>')));
+            table.append(thead).append(tbody);
+            $('body').append(table);
+            // IT WAS FUCKING HERE I WAS SUPPOSED TO DO THIS
+        }
+        function replaceFamilyTree() {
+            const newTbody = $('<tbody></tbody>');
+            newTbody.append($('<tr></tr>').append($('<td>Gerard</td>')).append($('<td>Bonissa</td>')));
+            $('table tbody').html(newTbody.html());
+        }
+        createFamilyTree();
+        replaceFamilyTree();
+        </script>
+    </body>
+
+</html>
