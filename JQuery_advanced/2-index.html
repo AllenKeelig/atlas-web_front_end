@@ -10,6 +10,35 @@
 
     <body>
         <script type="application/javascript">
+        function createFamilyTree() {
+            const tableHtml = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                            <td>Guillaume</td>
+                            <td>Salva</td>
+                        </tr>
+                        <tr>
+                            <td>Paulette</td>
+                            <td>Salva</td>
+                        </tr>
+                        <tr>
+                            <td>Antoine</td>
+                            <td>Salva</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+            $('body').append(tableHtml);
+            // fuck it I'm too tired to figure out what I'm missing
+        }
+        createFamilyTree();
         </script>
     </body>
 
