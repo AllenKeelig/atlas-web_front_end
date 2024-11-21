@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" type="application/javascript"></script>
+    </head>
+
+    <body>
+        <script type="application/javascript">
+        function createFamilyTree() {
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            const firstnameHeader = document.createElement('th');
+            firstnameHeader.textContent = 'Firstname';
+            headerRow.appendChild(firstnameHeader);
+            const lastnameHeader = document.createElement('th');
+            lastnameHeader.textContent = 'Lastname';
+            headerRow.appendChild(lastnameHeader);
+            thead.appendChild(headerRow);
+            const tbody = document.createElement('tbody');
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            document.body.appendChild(table);
+            
+        }
+        function addNewMember(firstName, lastName) {
+            const tbody = document.querySelector('table tbody');
+            const row = document.createElement('tr');
+            const firstNameCell = document.createElement('td');
+            firstNameCell.textContent = firstName;
+            row.appendChild(firstNameCell);
+            const lastNameCell = document.createElement('td');
+            lastNameCell.textContent = lastName;
+            row.appendChild(lastNameCell);
+            const removeCell = document.createElement('td');
+            removeCell.textContent = 'x';
+            removeCell.style.backgroundColor = 'orange';
+            removeCell.style.cursor = 'pointer';
+            removeCell.style.textAlign = 'center';
+            removeCell.addEventListener('click', function() {
+            });
+            row.appendChild(removeCell);
+            tbody.appendChild(row);
+        }
+        createFamilyTree();
+        addNewMember('Guillaume', 'Salva');
+        addNewMember('Arielle', 'Snizt');
+        addNewMember('Fanette', 'Snizt');
+        addNewMember('Gerard', 'Snizt');
+        addNewMember('Victor', 'Salva');
+        </script>
+    </body>
+
+</html>
