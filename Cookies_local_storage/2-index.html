@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cookies</title>
+    </head>
+    <body>
+        <h1>Log in to the website</h1>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="setCookies()">Log me in</button>
+        <h1>Cookies</h1>
+        <button onclick="showCookies()">Show the cookies</button>
+        <div id="cookie-container"></div>
+        <script>
+            function setCookies() {
+                const firstname = document.getElementById('firstname').value;
+                const email = document.getElementById('email').value;
+                const date = new Date();
+                date.setTime(date.getTime() + (10 * 24 * 60 * 60 * 1000)); // 10 days in milliseconds
+                const expires = `expires=${date.toUTCString()}`;
+                document.cookie = `firstname=${firstname}; ${expires}; path=/`;
+                document.cookie = `email=${email}; ${expires}; path=/`;
+            }
+            function getCookie(name) {
+                const cookies = document.cookie.split('; ');
+                for (const cookie of cookies) {
+                    const [key, value] = cookie.split('=');
+                    if (key===name) {
+                        return value;
+                    }
+                }
+                return '';
+            }
+            function showCookies() {
+                const firstname = getCookie('firstname');
+                const email = getCookie('email');
+                const container = document.getElementById('cookie-container');
+                container.innerHTML = '';
+                const p = document.createElement('p');
+                p.innerHTML = `Email: ${email} - Firstname: ${firstname}`;
+                container.appendChild(p);
+            }
+        </script>
+    </body>
+</html>
