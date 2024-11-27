@@ -15,3 +15,4 @@ http://localhost:5500/Cookies_local_storage/0-index.html
 http://localhost:5500/Cookies_local_storage/1-index.html
 http://localhost:5500/Cookies_local_storage/2-index.html
 http://localhost:5500/Cookies_local_storage/3-index.html
+http://localhost:5500/Cookies_local_storage/4-index.html
