@@ -13,3 +13,5 @@ At the end of this project, I should be able to explain to anyone
 if you have a live server open you can access the tasks at: http://localhost:5500/Cookies_local_storage/{task_number_here}-index.html or the individual tasks at
 http://localhost:5500/Cookies_local_storage/0-index.html
 http://localhost:5500/Cookies_local_storage/1-index.html
+http://localhost:5500/Cookies_local_storage/2-index.html
+http://localhost:5500/Cookies_local_storage/3-index.html
