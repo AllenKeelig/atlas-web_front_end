@@ -9,3 +9,7 @@ At the end of this project, I should be able to explain to anyone
 - How to use js-cookie for easy cookie manipulation
 - How to use the browser web storage
 - The differences between local storage and session storage
+
+if you have a live server open you can access the tasks at: http://localhost:5500/Cookies_local_storage/{task_number_here}-index.html or the individual tasks at
+http://localhost:5500/Cookies_local_storage/0-index.html
+http://localhost:5500/Cookies_local_storage/1-index.html
