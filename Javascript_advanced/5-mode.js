@@ -1,6 +1,6 @@
 function changeMode(size, weight, transform, background, color) {
     return function () {
-        document.body.style.fontSize = size;
+        document.body.style.fontSize = size + "px";
         document.body.style.fontWeight = weight;
         document.body.style.textTransform = transform;
         document.body.style.backgroundColor = background;
@@ -20,5 +20,9 @@ function main() {
     darkModeBtn.textContent = "Dark Mode";
     const screamBtn = document.createElement("button");
     screamBtn.textContent = ("Scream mode");
+    
+    document.body.appendChild(spookyBtn);
+    document.body.appendChild(darkModeBtn);
+    document.body.appendChild(screamBtn);
 }
 main();
