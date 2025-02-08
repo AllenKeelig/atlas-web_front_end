@@ -1,0 +1,1 @@
+Atlas project in the Fullstack course to teach SASS and SCSS.
