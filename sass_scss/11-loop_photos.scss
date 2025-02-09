@@ -1,21 +1,7 @@
-@import "10-colors";
-
-$list-names: alice, bob, charlie;
+@import '11-photos';
 
 @each $name in $list-names {
-  .#{$name} {
-    background-image: url("images/#{$name}.jpg");
-  }
-}
-
-.red {
-  color: $red;
-}
-
-.green {
-  color: $green;
-}
-
-.blue {
-  color: $blue;
+    .photo-#{$name} {
+        background: image-url("photos/#{$name}.jpg") no-repeat;
+    }
 }
